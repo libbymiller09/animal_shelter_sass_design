@@ -1,1 +1,1 @@
-# animal_shelter_sass_design
+# Design for animal shelter website
