@@ -1,13 +1,14 @@
 .features {
   grid-column: center-start / center-end;
   margin: 15rem 0;
-  background-color: $color-off-white;
+  // background-color: $color-off-white;
 }
 
 .feature {
   float: left;
   width: 33.33333333%;
-  margin-bottom: 3rem;
+  margin-top: 20rem;
+  // margin-bottom: 3rem;
 
   display: grid;
   grid-template-columns: min-content 1fr;

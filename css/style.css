@@ -13,11 +13,12 @@ html {
       font-size: 50%; } }
 
 body {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  background-color: #FDF0E8; }
 
 .container {
   display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: 80vh repeat(5, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   @media only screen and (max-width: 62.5em) {
     .container {
@@ -47,7 +48,7 @@ body {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 5vw);
   grid-gap: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 13rem;
   padding-right: 2rem;
   padding-left: 2rem;
   background-color: #6C9AA9; }
@@ -104,13 +105,12 @@ body {
 
 .features {
   grid-column: center-start / center-end;
-  margin: 15rem 0;
-  background-color: #FDF0E8; }
+  margin: 15rem 0; }
 
 .feature {
   float: left;
   width: 33.33333333%;
-  margin-bottom: 3rem;
+  margin-top: 20rem;
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-row-gap: 1.5rem;
@@ -235,6 +235,43 @@ body {
         transform: translateY(1rem); } }
 
 .footer {
-  background-color: #AD987D;
+  background-color: #6C9AA9;
   grid-column: full-start / full-end;
   padding: 8rem; }
+  .footer__copyright {
+    font-size: 1.2rem;
+    color: #2A333C;
+    margin-top: 5rem;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%; }
+  .footer__link {
+    text-decoration: none;
+    color: #2A333C;
+    background-color: rgba(253, 240, 232, 0.05);
+    padding: 1rem;
+    transition: all .3s; }
+    .footer__link:hover {
+      background-color: rgba(253, 240, 232, 0.25); }
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  align-items: center; }
+  .nav__link:link, .nav__link:visited {
+    font-size: 1.6rem;
+    color: #FDF0E8;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "Shadows Into Light", cursive;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all .3s; }
+  .nav__link:hover, .nav__link:active {
+    background-color: rgba(253, 240, 232, 0.15);
+    transform: translateY(-5px); }
