@@ -46,7 +46,8 @@ html {
   grid-gap: 2rem;
   padding-bottom: 2rem;
   padding-right: 2rem;
-  padding-left: 2rem; }
+  padding-left: 2rem;
+  background-color: grey; }
   .gallery__item--1 {
     grid-row: 1 / span 4;
     grid-column: 1 / span 2; }
@@ -102,7 +103,7 @@ html {
   grid-column: center-start / center-end;
   margin: 15rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-gap: 7rem; }
 
 .shelter {
@@ -131,9 +132,39 @@ html {
     align-self: end;
     z-index: 3;
     width: 80%;
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.9rem;
+    text-align: center;
+    padding: 1.25rem;
+    background-color: hotpink;
+    color: #fff;
+    font-weight: 400;
+    transform: translateY(50%); }
+  .shelter__location, .shelter__dogs, .shelter__cats, .shelter__fees {
     font-size: 1.7rem;
-    text-align: center; }
+    margin-left: 4.5rem;
+    display: flex;
+    align-items: center;
+    color: white; }
+    .shelter__location svg, .shelter__dogs svg, .shelter__cats svg, .shelter__fees svg {
+      fill: crimson;
+      height: 2rem;
+      width: 2rem;
+      margin-right: 1rem; }
+  .shelter__btn {
+    grid-column: 1 / -1;
+    background-color: hotpink;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 1.2rem 2.25rem;
+    cursor: pointer;
+    transition: all .3s; }
+    .shelter__btn:hover {
+      background-color: crimson; }
 
 .sidebar {
   background-color: crimson;

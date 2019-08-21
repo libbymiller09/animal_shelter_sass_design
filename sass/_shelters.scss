@@ -3,7 +3,7 @@
   margin: 15rem 0;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-gap: 7rem;
 }
 
@@ -39,29 +39,49 @@
     align-self: end;
     z-index: 3;
     width: 80%;
-    font-family: $font-headers;
-    font-size: 1.7rem;
+    font-family: $font-default;
+    font-size: 1.9rem;
     text-align: center;
+    padding: 1.25rem;
+    background-color: hotpink;
+    color: $color-white;
+    font-weight: 400;
+    transform: translateY(50%);
   }
 
-  &__location {
-
-  }
-
-  &__dogs {
-
-  }
-
-  &__cats {
-
-  }
-
+  &__location,
+  &__dogs,
+  &__cats,
   &__fees {
+    font-size: 1.7rem;
+    margin-left: 4.5rem;
+    display: flex;
+    align-items: center;
+    color: white;
 
-
+    svg {
+      fill: crimson;
+      height: 2rem;
+      width: 2rem;
+      margin-right: 1rem;
+    }
   }
 
   &__btn {
+    grid-column: 1 / -1;
+    background-color: hotpink;
+    color: $color-white;
+    border: none;
+    border-radius: 0;
+    font-family: $font-headers;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 1.2rem 2.25rem;
+    cursor: pointer;
+    transition: all .3s;
 
+    &:hover {
+      background-color: crimson;
+    }
   }
 }
