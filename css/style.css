@@ -99,8 +99,32 @@ html {
     .gallery__img:hover {
       transform: translateY(1.2rem) scale(1.05); }
 
-.shelters {
+.features {
   grid-column: center-start / center-end;
+  margin: 15rem 0; }
+
+.feature {
+  float: left;
+  width: 33.33333333%;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem; }
+  .feature__icon {
+    fill: crimson;
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem); }
+  .feature__heading {
+    font-size: 1.9rem;
+    color: grey; }
+  .feature__text {
+    font-size: 1.7rem; }
+
+.shelters {
+  grid-column: col-start / center-end;
   margin: 15rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
@@ -204,3 +228,8 @@ html {
         transform: translateY(-1.2rem); }
       .nav-btn::after {
         transform: translateY(1rem); } }
+
+.footer {
+  background-color: palevioletred;
+  grid-column: full-start / full-end;
+  padding: 8rem; }
