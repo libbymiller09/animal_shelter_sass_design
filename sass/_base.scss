@@ -1,5 +1,10 @@
 // Color variables
 $color-white: #fff;
+$color-blue: 	#6C9AA9;
+$color-green: 	#999845;
+$color-off-white: #FDF0E8;
+$color-black: #2A333C;
+$color-brown: #AD987D;
 
 // Font variables
 $font-headers: 'Shadows Into Light', cursive;
@@ -30,7 +35,7 @@ html {
 }
 
 body {
-  // font-family: '';
+  font-family: $font-default;
   // color: '';
 }
 

@@ -1,5 +1,5 @@
 .sidebar {
-  background-color: crimson;
+  background-color: $color-green;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
 
@@ -18,7 +18,7 @@
   border: none;
   border-radius: 0;
 
-  background-color: $color-white;
+  background-color: $color-off-white;
   height: 2px;
   width: 4.5rem;
   margin-top: 4rem;
@@ -27,7 +27,7 @@
   &::after {
     content: "";
     display: block;
-    background-color: $color-white;
+    background-color: $color-off-white;
     height: 2px;
     width: 4.5rem;
   }

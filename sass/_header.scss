@@ -1,7 +1,7 @@
 .header {
   grid-column: full-start / full-end;
-  background-color: grey;
-  color: $color-white;
+  background-color: $color-blue;
+  color: $color-off-white;
 
   &__heading {
     &--small {
@@ -28,7 +28,7 @@
   padding-bottom: 2rem;
   padding-right: 2rem;
   padding-left: 2rem;
-  background-color: grey;
+  background-color: $color-blue;
   
   &__item {
 

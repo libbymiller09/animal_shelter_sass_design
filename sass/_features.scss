@@ -1,6 +1,7 @@
 .features {
   grid-column: center-start / center-end;
   margin: 15rem 0;
+  background-color: $color-off-white;
 }
 
 .feature {
@@ -14,7 +15,7 @@
   grid-column-gap: 2.5rem;
 
   &__icon {
-    fill: crimson;
+    fill: $color-green;
     width: 4.5rem;
     height: 4.5rem;
     grid-row: 1 / span 2;
@@ -23,10 +24,11 @@
 
   &__heading {
     font-size: 1.9rem;
-    color: grey;
+    color: $color-brown;
   }
 
   &__text {
     font-size: 1.7rem;
+    color: $color-black;
   }
 }
