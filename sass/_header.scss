@@ -3,6 +3,10 @@
   background-color: $color-blue;
   color: $color-off-white;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding-bottom: 2rem;
+  }
+
   &__heading {
     &--small {
       font-size: 2rem;
@@ -25,10 +29,22 @@
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 5vw);
   grid-gap: 2rem;
+  padding-top: 2rem;
+  // padding-bottom: 2rem;
   padding-bottom: 13rem;
   padding-right: 2rem;
   padding-left: 2rem;
   background-color: $color-blue;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-bottom: 2rem;
+    grid-template-rows: repeat(7, 8vw);
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding-bottom: 0;
+    grid-template-rows: repeat(7, 9vw);
+  }
   
   &__item {
 

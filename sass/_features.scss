@@ -1,19 +1,36 @@
 .features {
   grid-column: center-start / center-end;
-  margin: 15rem 0;
-  // background-color: $color-off-white;
+  margin: 0;
+  // margin: 15rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start;
+
+  @media only screen and (max-width: $bp-small) {
+    // margin-top: 10rem;
+  }
 }
 
 .feature {
   float: left;
-  width: 33.33333333%;
+  // width: ß33.33333333%;
   margin-top: 20rem;
-  // margin-bottom: 3rem;
 
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 4rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-row-gap: 1rem;
+    grid-column-gap: 1.5rem;
+  }
 
   &__icon {
     fill: $color-green;
@@ -21,6 +38,16 @@
     height: 4.5rem;
     grid-row: 1 / span 2;
     transform: translateY(-1rem);
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 2.5rem;
+      height: 2.5rem;
+      transform: translateX(1.75rem);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      transform: translateX(1rem);
+    }
   }
 
   &__heading {
@@ -31,5 +58,9 @@
   &__text {
     font-size: 1.7rem;
     color: $color-black;
+
+    // @media only screen and (max-width: $bp-small) {
+    //   font-size: 1.5rem;
+    // }
   }
 }
